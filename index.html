@@ -45,7 +45,6 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0B0B0F; }
         ::-webkit-scrollbar-thumb { background: #7B61FF; border-radius: 10px; }
@@ -77,11 +76,11 @@
         </div>
         <div class="relative z-10 text-center px-6" data-aos="zoom-out">
             <span class="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-accent-blue text-xs font-bold tracking-[0.2em] uppercase mb-6">Premium Thumbnail Designer</span>
-            <h1 class="text-5xl md:text-8xl font-display font-bold mb-8 uppercase">Maximize Your <br><span class="text-gradient">CTR</span></h1>
+            <h1 class="text-5xl md:text-8xl font-display font-bold mb-8 uppercase text-white">Maximize Your <br><span class="text-gradient">CTR</span></h1>
             <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">I craft high-impact visuals that turn viewers into subscribers.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#work" class="btn-primary px-10 py-4 rounded-full font-bold text-white">VIEW PORTFOLIO</a>
-                <a href="#contact" class="px-10 py-4 border border-white/10 hover:bg-white/5 rounded-full font-bold transition-all">LET'S TALK</a>
+                <a href="#contact" class="px-10 py-4 border border-white/10 hover:bg-white/5 rounded-full font-bold transition-all text-white">LET'S TALK</a>
             </div>
         </div>
     </section>
@@ -98,7 +97,7 @@
                 </div>
                 <div data-aos="fade-left">
                     <h2 class="text-4xl md:text-5xl font-display font-bold mb-8 uppercase text-gradient">About Me</h2>
-                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed text-white">
                         I am Arun, a dedicated visual strategist specializing in creating high-conversion YouTube thumbnails. My designs focus on grabbing attention and increasing your click-through rate through professional color theory and composition.
                     </p>
                     <div class="grid grid-cols-2 gap-6 mb-8">
@@ -111,11 +110,6 @@
                             <p class="text-xs text-gray-500 uppercase tracking-widest mt-1">Projects</p>
                         </div>
                     </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-sm">Adobe Photoshop</span>
-                        <span class="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-sm">CTR Optimization</span>
-                        <span class="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-sm">Visual Storytelling</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -123,7 +117,7 @@
 
     <section id="work" class="py-24 bg-bg-dark">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-display font-bold mb-16 uppercase tracking-tighter">Selected <span class="text-gradient">Works</span></h2>
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-16 uppercase tracking-tighter text-white">Selected <span class="text-gradient">Works</span></h2>
             <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 </div>
         </div>
@@ -133,12 +127,12 @@
         <div class="max-w-4xl mx-auto px-6">
             <div class="glass-card p-12 md:p-20 rounded-[3rem] text-center" data-aos="fade-up">
                 <span class="text-accent-blue font-bold tracking-widest uppercase text-xs mb-4 block">Get in Touch</span>
-                <h2 class="text-4xl md:text-6xl font-display font-bold mb-10 uppercase tracking-tighter">Ready to <span class="text-gradient">Grow?</span></h2>
+                <h2 class="text-4xl md:text-6xl font-display font-bold mb-10 uppercase tracking-tighter text-white">Ready to <span class="text-gradient">Grow?</span></h2>
                 <div class="space-y-6">
-                    <a href="mailto:roopnarayankushwaha0@gmail.com" class="flex items-center justify-center gap-4 text-lg md:text-2xl font-medium hover:text-accent-purple transition-all break-all">
-                        <i data-lucide="mail" class="w-6 h-6 md:w-8 md:h-8"></i> roopnarayankushwaha0@gmail.com
+                    <a href="mailto:arundesign57@gmail.com" class="flex items-center justify-center gap-4 text-lg md:text-2xl font-medium hover:text-accent-purple transition-all break-all text-white">
+                        <i data-lucide="mail" class="w-6 h-6 md:w-8 md:h-8"></i> arundesign57@gmail.com
                     </a>
-                    <div class="flex items-center justify-center gap-4 text-xl md:text-2xl font-medium">
+                    <div class="flex items-center justify-center gap-4 text-xl md:text-2xl font-medium text-white">
                         <i data-lucide="phone" class="text-accent-blue w-6 h-6 md:w-8 md:h-8"></i> +91 8959936792
                     </div>
                 </div>
@@ -155,22 +149,16 @@
                 <span class="font-bold text-white uppercase tracking-widest">ARUN</span>
             </div>
             <p>© <span id="year"></span> Arun Design. All Rights Reserved.</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white transition-colors">Instagram</a>
-                <a href="#" class="hover:text-white transition-colors">Twitter</a>
-            </div>
         </div>
     </footer>
 
     <script>
-        // Initialize Libraries
         lucide.createIcons();
         AOS.init({ once: true, duration: 800 });
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Portfolio Generation Logic
         const grid = document.getElementById('projects-grid');
-        const timestamp = new Date().getTime(); // To prevent cache issues
+        const timestamp = new Date().getTime();
 
         for (let i = 1; i <= 9; i++) {
             const card = document.createElement('div');
@@ -186,7 +174,7 @@
                 <div class="p-6 flex items-center justify-between">
                     <div>
                         <p class="text-[10px] font-bold text-accent-blue tracking-widest uppercase mb-1">YouTube Visual</p>
-                        <h3 class="font-bold text-lg uppercase tracking-tight">PROJECT ${i}</h3>
+                        <h3 class="font-bold text-lg uppercase tracking-tight text-white">PROJECT ${i}</h3>
                     </div>
                     <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent-purple group-hover:text-white transition-all">
                         <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
@@ -195,8 +183,6 @@
             `;
             grid.appendChild(card);
         }
-        
-        // Final Icon Refresh
         lucide.createIcons();
     </script>
 </body>
